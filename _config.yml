@@ -1,0 +1,5 @@
+title: "Constitución Mexicana"
+description: "Repositorio interactivo para análisis y visualización de la Constitución Mexicana"
+theme: minima
+baseurl: "/<repositorio>"  # Solo si no es tu sitio principal
+url: "https://c4lup0sec.github.io"
