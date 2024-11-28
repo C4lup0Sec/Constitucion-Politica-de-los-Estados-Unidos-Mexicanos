@@ -1,5 +1,8 @@
 title: "Constitución Mexicana"
 description: "Repositorio interactivo para análisis y visualización de la Constitución Mexicana"
 theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
 baseurl: "/<repositorio>"  # Solo si no es tu sitio principal
 url: "https://c4lup0sec.github.io"
