@@ -4,5 +4,5 @@ theme: minima
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
-baseurl: "/<repositorio>"  # Solo si no es tu sitio principal
+baseurl: "/Constitucion-Politica-de-los-Estados-Unidos-Mexicanos"  # Solo si no es tu sitio principal
 url: "https://c4lup0sec.github.io"
