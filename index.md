@@ -2,7 +2,8 @@
 layout: default
 title: Inicio
 ---
-    <link rel="stylesheet" href="assets/css/dark-theme.css">
+
+<link rel="stylesheet" href="assets/css/dark-theme.css">
 
 # Constitución Mexicana: Panel Interactivo
 
