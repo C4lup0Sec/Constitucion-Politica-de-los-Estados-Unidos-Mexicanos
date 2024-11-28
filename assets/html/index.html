@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constitución Mexicana</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #87ceeb;
+            text-decoration: underline;
+        }
+        h1, h3 {
+            color: #ffffff;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .btn {
+            background-color: #1e90ff;
+            color: #ffffff;
+            border: none;
+        }
+        .btn:hover {
+            background-color: #87ceeb;
+            color: #121212;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Constitución Mexicana: Panel Interactivo</h1>
+        <p class="text-center">Explora, analiza y descarga la Constitución Mexicana en diferentes formatos.</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Descargas</h3>
+                <ul>
+                    <li><a href="./Formatos/constitucion.txt" download>Texto plano (TXT)</a></li>
+                    <li><a href="./Formatos/constitucion.json" download>JSON</a></li>
+                    <li><a href="./Formatos/constitucion.md" download>Markdown</a></li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <h3>Análisis Interactivo</h3>
+                <canvas id="wordCloud" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('wordCloud').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Artículo 1', 'Artículo 2', 'Artículo 3', 'Artículo 4'],
+                datasets: [{
+                    label: 'Frecuencia de palabras',
+                    data: [12, 19, 3, 5],
+                    backgroundColor: ['rgba(30, 144, 255, 0.2)'],
+                    borderColor: ['rgba(30, 144, 255, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#ffffff' }
+                    },
+                    x: {
+                        ticks: { color: '#ffffff' }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
